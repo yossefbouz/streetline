@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}DVstreetline — Built for sound and speed{% endblock %}
+
+{% block content %}
+<section class="mx-auto flex max-w-6xl flex-col gap-16 px-6 py-16 lg:flex-row lg:items-center">
+    <div class="flex-1 space-y-6">
+        <p class="body-font text-xs uppercase tracking-[0.25em] text-gray-400">Music × Fashion × Culture</p>
+        <h1 class="heading-font text-4xl leading-tight sm:text-5xl lg:text-6xl">
+            Built by creators → for culture.
+        </h1>
+        <p class="body-font max-w-2xl text-lg text-gray-300">
+            DVstreetline is a luxury streetwear house born at the intersection of music, movement, and technology. We craft premium garments that move with sound and speed, designed for those who live after dark.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="#" class="btn-secondary hero-cta">Enter the Streetline</a>
+            <a href="#" class="btn-primary hero-cta">View Collection</a>
+        </div>
+    </div>
+    <div class="flex-1">
+        <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 shadow-2xl">
+            <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="DVstreetline hoodie mockup" class="h-full w-full object-cover" />
+        </div>
+    </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-6 pb-16">
+    <div class="grid gap-8 lg:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/0 p-8 shadow-2xl">
+            <div class="overflow-hidden rounded-2xl border border-white/10">
+                <img src="{{ url_for('static', filename='css/img/6.png') }}" alt="DVstreetline hoodie alternate mockup" class="w-full object-cover" />
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <h3 class="heading-font text-2xl tracking-wide">Midnight Velocity</h3>
+                    <p class="body-font text-sm uppercase tracking-[0.18em] text-gray-400">Limited run</p>
+                </div>
+                <a href="#" class="btn-secondary">View Lookbook</a>
+            </div>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/0 p-8 shadow-2xl">
+            <div class="overflow-hidden rounded-2xl border border-white/10">
+                <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="DVstreetline signature hoodie" class="w-full object-cover" />
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <h3 class="heading-font text-2xl tracking-wide">Signature Streetline</h3>
+                    <p class="body-font text-sm uppercase tracking-[0.18em] text-gray-400">Sound &amp; speed</p>
+                </div>
+                <a href="#" class="btn-primary">Shop Drop</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-6 pb-20">
+    <div class="grid gap-10 lg:grid-cols-2">
+        <div class="space-y-4">
+            <h2 class="heading-font text-2xl uppercase tracking-[0.12em] text-gray-200">Problem</h2>
+            <p class="body-font text-lg leading-relaxed text-gray-300">“In a world overflowing with noise — trends, influencers, fast fashion, and mass-produced ‘aesthetics’ — people have lost their sense of identity. Music used to be personal. Clothing used to mean something.</p>
+            <p class="body-font text-lg leading-relaxed text-gray-300">People no longer know what represents them.<br>Fashion feels disconnected from culture.<br>Music tastes don’t show up in what people wear.<br>Everything looks the same.<br>Identity feels confused, temporary, and disposable.</p>
+            <p class="body-font text-lg leading-relaxed text-gray-300">There is no brand that connects music lovers, car enthusiasts, and culture-driven individuals to clothing that reflects who they really are. There is no easy place to buy clothing that carries meaning, story, and belonging. People want clothes that feel like them — not like another trend.”</p>
+        </div>
+        <div class="space-y-4">
+            <h2 class="heading-font text-2xl uppercase tracking-[0.12em] text-gray-200">Our Solution</h2>
+            <p class="body-font text-lg leading-relaxed text-gray-300">“DvStreetline gives people their identity back. We merge music × fashion × technology × culture to create clothing that carries story, emotion, and belonging.</p>
+            <p class="body-font text-lg leading-relaxed text-gray-300">A piece of your music taste (rap, trap, R&amp;B, techno, rock, punk)<br>A representation of your lifestyle (nights, roads, speed, movement)<br>A digital identity through your personal QR-enabled profile<br>A collectible item you can claim and own as an NFT<br>A badge of belonging to a community that lives by sound and speed</p>
+            <p class="body-font text-lg leading-relaxed text-gray-300">Through our website, QR scans, digital profiles, community rewards, and exclusive drops, we create an ecosystem where fashion is no longer just fabric — it’s meaning, culture, and connection. DvStreetline is not a brand you buy. It’s a brand you join.”</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
