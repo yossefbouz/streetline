@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - DVstreetline{% endblock %}
+
+{% block content %}
+<section class="relative overflow-hidden">
+    <div class="mx-auto flex max-w-6xl flex-col gap-16 px-6 py-16 lg:flex-row lg:items-center lg:py-24">
+        <div class="flex-1 space-y-8">
+            <p class="text-xs uppercase tracking-[0.35em] text-gray-500">Premium Streetline</p>
+            <h1 class="font-heading text-5xl font-semibold leading-tight text-black sm:text-6xl md:text-7xl">Close every deal.</h1>
+            <p class="max-w-2xl text-lg text-gray-600">A monochrome-first experience that brings clarity to your brand. Showcase products, tutorials, and every story with sharp contrast and timeless elegance.</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="{{ url_for('shop') }}" class="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/15 transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-gray-300">Get Started</a>
+                <a href="{{ url_for('tutorials') }}" class="inline-flex items-center justify-center rounded-full border border-gray-900 px-6 py-3 text-sm font-semibold text-gray-900 transition hover:-translate-y-0.5 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-300">See pricing</a>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-4 shadow-soft">
+                    <p class="text-sm text-gray-500">Conversion-ready layout</p>
+                    <p class="mt-1 text-lg font-semibold text-gray-900">Monochrome luxury with purposeful spacing.</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-4 shadow-soft">
+                    <p class="text-sm text-gray-500">Guided storytelling</p>
+                    <p class="mt-1 text-lg font-semibold text-gray-900">Lead visitors from hero to CTA effortlessly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="rounded-3xl border border-gray-200 bg-gradient-to-b from-white via-gray-50 to-gray-100 p-6 shadow-soft">
+                <div class="space-y-4 rounded-2xl border border-dashed border-gray-200 bg-white/80 p-6 text-gray-700 shadow-inner">
+                    <p class="text-sm font-semibold text-gray-500">Monochrome preview</p>
+                    <p class="text-3xl font-heading text-gray-900">Design that stays timeless.</p>
+                    <p class="text-gray-600">Soft edges, balanced white space, and precise typography form a premium canvas for any product or story you want to showcase.</p>
+                    <div class="grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-xl border border-gray-200 bg-white/80 p-4 shadow-sm">
+                            <p class="text-sm font-semibold text-gray-800">Shop</p>
+                            <p class="text-sm text-gray-500">Curated, minimal, and ready to convert.</p>
+                        </div>
+                        <div class="rounded-xl border border-gray-200 bg-white/80 p-4 shadow-sm">
+                            <p class="text-sm font-semibold text-gray-800">Tutorials</p>
+                            <p class="text-sm text-gray-500">Teach with clarity using crisp layouts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
