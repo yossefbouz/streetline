@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <style>
+        :root {
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: var(--font-body);
+            background: #000;
+            color: #f9fafb;
+            letter-spacing: 0.01em;
+        }
+        .heading-font {
+            font-family: var(--font-heading);
+        }
+        .body-font {
+            font-family: var(--font-body);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="w-full border-b border-white/10 bg-black/90 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-3">
+                <img src="{{ url_for('static', filename='css/img/ChatGPT Image Nov 23, 2025, 08_45_01 PM.png') }}" alt="DVstreetline logo" class="h-10 w-10 rounded-full border border-white/10 object-cover" />
+                <span class="heading-font text-xl tracking-wide">DVstreetline</span>
+            </div>
+            <nav class="flex items-center gap-6 text-xs uppercase tracking-[0.12em]">
+                {% for name in ['Home', 'Shop', 'Contact', 'Redeem Code'] %}
+                <a href="#" class="group relative inline-flex items-center gap-1 rounded-full px-3 py-2 body-font text-gray-200 transition duration-300 ease-out hover:scale-105 hover:brightness-110 hover:text-gray-100 active:scale-95">
+                    <span>{{ name }}</span>
+                    <span class="absolute left-1/2 bottom-1 h-px w-0 -translate-x-1/2 bg-gray-200 transition duration-300 ease-out group-hover:w-full"></span>
+                </a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="border-t border-white/10 py-6">
+        <p class="text-center text-sm text-gray-400">© 2025 DVstreetline. All rights reserved.</p>
+    </footer>
+</body>
+</html>
