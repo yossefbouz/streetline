@@ -20,7 +20,11 @@
     </div>
     <div class="flex-1">
         <div class="hero-card">
-            <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="DVstreetline hoodie mockup" class="h-full w-full object-cover" />
+            <video autoplay muted loop playsinline class="h-full w-full object-cover rounded-3xl">
+                <source src="{{ url_for('static', filename='videos/drakegif.mov') }}" type="video/quicktime">
+                <!-- Fallback image if the video cannot be played -->
+                <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="DVstreetline hoodie mockup" class="h-full w-full object-cover" />
+            </video>
         </div>
     </div>
 </section>
