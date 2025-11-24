@@ -3,21 +3,23 @@
 {% block title %}DVstreetline — Built for sound and speed{% endblock %}
 
 {% block content %}
-<section class="mx-auto flex max-w-6xl flex-col gap-16 px-6 py-16 lg:flex-row lg:items-center">
+<section class="relative mx-auto flex max-w-6xl flex-col gap-16 px-6 py-16 lg:flex-row lg:items-center">
+    <div class="vertical-marker">Liquid Ether</div>
     <div class="flex-1 space-y-6">
-        <p class="body-font text-xs uppercase tracking-[0.25em] text-gray-400">Music × Fashion × Culture</p>
-        <h1 class="heading-font text-4xl leading-tight sm:text-5xl lg:text-6xl">
+        <p class="tagline-pill">Music × Fashion × Culture</p>
+        <h1 class="heading-font text-4xl leading-tight sm:text-5xl lg:text-6xl headline-animate">
             Built by creators → for culture.
         </h1>
-        <p class="body-font max-w-2xl text-lg text-gray-300">
+        <p class="body-font max-w-2xl text-lg text-slate-200 subtle-fade">
             DVstreetline is a luxury streetwear house born at the intersection of music, movement, and technology. We craft premium garments that move with sound and speed, designed for those who live after dark.
         </p>
-        <div class="flex flex-wrap gap-4">
-
+        <div class="cta-group flex flex-wrap gap-4">
+            <a href="{{ url_for('shop') }}" class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-xl shadow-cyan-500/20 transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-300">Shop the drop</a>
+            <a href="{{ url_for('tutorials') }}" class="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:border-cyan-300 hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-300">View tutorials</a>
         </div>
     </div>
     <div class="flex-1">
-        <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 shadow-2xl">
+        <div class="hero-card">
             <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="DVstreetline hoodie mockup" class="h-full w-full object-cover" />
         </div>
     </div>
