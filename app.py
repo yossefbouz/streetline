@@ -27,6 +27,10 @@ def shop():
 def tutorial():
     return render_template('tutorial.html')
 
+@app.route('/nft')
+def nft():
+    return render_template('nft.html')
+
 
 @app.route('/tutorials')
 def tutorials():
