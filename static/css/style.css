@@ -4,15 +4,7 @@
     --font-body: 'Poppins', sans-serif;
     --glass: rgba(255, 255, 255, 0.08);
     --outline: rgba(255, 255, 255, 0.12);
-    --glow-primary: #9ef4e8;
-    --glow-secondary: #d16bff;
-    --glow-accent: #f5a8ff;
-    --text-main: #e2e8f0;
-    --bg-deep: #050505;
-}
 
-body {
-    background-color: var(--bg-deep);
     color: var(--text-main);
     font-family: var(--font-body);
     position: relative;
@@ -25,9 +17,6 @@ body {
     overflow: hidden;
     pointer-events: none;
     z-index: -1;
-    background: radial-gradient(circle at 20% 20%, rgba(245, 168, 255, 0.12), transparent 35%),
-        radial-gradient(circle at 78% 18%, rgba(209, 107, 255, 0.12), transparent 30%),
-        radial-gradient(circle at 38% 82%, rgba(158, 244, 232, 0.12), transparent 35%);
 }
 
 .aurora-blob {
@@ -44,20 +33,19 @@ body {
 .aurora-1 {
     top: -10%;
     left: -8%;
-    background: radial-gradient(circle, rgba(245, 168, 255, 0.7), rgba(245, 168, 255, 0.18));
 }
 
 .aurora-2 {
     top: 25%;
     right: -6%;
-    background: radial-gradient(circle, rgba(209, 107, 255, 0.8), rgba(209, 107, 255, 0.22));
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.8), rgba(168, 85, 247, 0.2));
     animation-delay: 3s;
 }
 
 .aurora-3 {
     bottom: -12%;
     left: 15%;
-    background: radial-gradient(circle, rgba(158, 244, 232, 0.8), rgba(158, 244, 232, 0.2));
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.8), rgba(34, 211, 238, 0.15));
     animation-delay: 6s;
 }
 
@@ -70,8 +58,7 @@ body {
 }
 
 @keyframes floatPulse {
-    0%,
-    100% {
+    0%, 100% {
         transform: translate3d(0, 0, 0) scale(1);
     }
     50% {
@@ -92,9 +79,9 @@ body {
 
 .nav-pill:hover {
     color: #0b1120;
-    background: linear-gradient(120deg, rgba(158, 244, 232, 0.9), rgba(209, 107, 255, 0.75));
+    background: linear-gradient(120deg, rgba(124, 243, 255, 0.9), rgba(168, 85, 247, 0.7));
     border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 15px 50px rgba(158, 244, 232, 0.22);
+    box-shadow: 0 15px 50px rgba(124, 243, 255, 0.22);
 }
 
 .glass-panel {
@@ -152,7 +139,7 @@ body {
     content: '';
     width: 1px;
     height: 48px;
-    background: linear-gradient(to bottom, transparent, rgba(209, 107, 255, 0.65), transparent);
+    background: linear-gradient(to bottom, transparent, rgba(124, 243, 255, 0.8), transparent);
     display: block;
 }
 
@@ -164,7 +151,7 @@ body {
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 10px 35px rgba(209, 107, 255, 0.18);
+    box-shadow: 0 10px 35px rgba(124, 243, 255, 0.18);
     letter-spacing: 0.28em;
     text-transform: uppercase;
     font-size: 0.7rem;
@@ -195,7 +182,7 @@ body {
     height: 140px;
     border-radius: 50%;
     pointer-events: none;
-    background: radial-gradient(circle at 30% 30%, rgba(158, 244, 232, 0.28), rgba(209, 107, 255, 0.2), transparent 70%);
+    background: radial-gradient(circle at 30% 30%, rgba(124, 243, 255, 0.35), rgba(168, 85, 247, 0.18), transparent 70%);
     filter: blur(30px);
     opacity: 0;
     transition: opacity 300ms ease;
@@ -222,8 +209,8 @@ body {
     gap: 0.35rem;
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
-    background: rgba(209, 107, 255, 0.08);
-    border: 1px solid rgba(209, 107, 255, 0.25);
+    background: rgba(124, 243, 255, 0.08);
+    border: 1px solid rgba(124, 243, 255, 0.25);
     color: rgba(226, 232, 240, 0.9);
     text-transform: uppercase;
     letter-spacing: 0.18em;
