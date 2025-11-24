@@ -23,7 +23,7 @@
         };
     </script>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100 antialiased font-body">
+<body class="min-h-screen bg-neutral-950 text-slate-100 antialiased font-body">
     <div class="global-aurora">
         <div class="aurora-blob aurora-1"></div>
         <div class="aurora-blob aurora-2"></div>
@@ -31,7 +31,7 @@
         <div class="grain-overlay"></div>
     </div>
     <div class="cursor-glow"></div>
-    <header class="sticky top-0 z-30 border-b border-white/10 bg-slate-900/70 backdrop-blur-xl">
+    <header class="sticky top-0 z-30 border-b border-white/10 bg-black/70 backdrop-blur-xl">
         <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <div class="flex items-center gap-3">
                 <img src="{{ url_for('static', filename='css/img/logo.png') }}" alt="DVstreetline logo" class="h-10 w-10 rounded-full border border-gray-200 object-cover shadow-sm" />
@@ -55,7 +55,7 @@
                 </ul>
             </nav>
         </div>
-        <div id="mobile-menu" class="hidden border-t border-white/10 bg-slate-900/90 backdrop-blur lg:hidden">
+        <div id="mobile-menu" class="hidden border-t border-white/10 bg-black/90 backdrop-blur lg:hidden">
             <nav class="mx-auto max-w-6xl px-6 py-4">
                 <ul class="flex flex-col gap-2 text-base font-medium text-slate-100">
                     <li><a href="{{ url_for('home') }}" class="block rounded-lg px-3 py-2 transition hover:bg-white/10">Home</a></li>
@@ -72,7 +72,7 @@
         {% block content %}{% endblock %}
     </main>
 
-    <footer class="border-t border-white/10 bg-slate-900/70 py-8 backdrop-blur">
+    <footer class="border-t border-white/10 bg-black/70 py-8 backdrop-blur">
         <div class="mx-auto max-w-6xl px-6 text-sm text-slate-300">© 2025 DVstreetline. All rights reserved.</div>
     </footer>
 
