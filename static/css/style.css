@@ -4,14 +4,7 @@
     --font-body: 'Poppins', sans-serif;
     --glass: rgba(255, 255, 255, 0.08);
     --outline: rgba(255, 255, 255, 0.12);
-    --glow-primary: #7cf3ff;
-    --glow-secondary: #a855f7;
-    --glow-accent: #22d3ee;
-    --text-main: #e2e8f0;
-}
 
-body {
-    background-color: #020617;
     color: var(--text-main);
     font-family: var(--font-body);
     position: relative;
@@ -24,9 +17,6 @@ body {
     overflow: hidden;
     pointer-events: none;
     z-index: -1;
-    background: radial-gradient(circle at 20% 20%, rgba(124, 243, 255, 0.08), transparent 35%),
-        radial-gradient(circle at 80% 10%, rgba(168, 85, 247, 0.08), transparent 30%),
-        radial-gradient(circle at 40% 80%, rgba(34, 211, 238, 0.08), transparent 35%);
 }
 
 .aurora-blob {
@@ -43,7 +33,6 @@ body {
 .aurora-1 {
     top: -10%;
     left: -8%;
-    background: radial-gradient(circle, rgba(124, 243, 255, 0.8), rgba(124, 243, 255, 0.2));
 }
 
 .aurora-2 {
@@ -69,8 +58,7 @@ body {
 }
 
 @keyframes floatPulse {
-    0%,
-    100% {
+    0%, 100% {
         transform: translate3d(0, 0, 0) scale(1);
     }
     50% {
