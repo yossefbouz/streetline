@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -34,7 +35,7 @@
     <header class="sticky top-0 z-30 border-b border-white/10 bg-black/70 backdrop-blur-xl">
         <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <div class="flex items-center gap-3">
-                <img src="{{ url_for('static', filename='css/img/logo.png') }}" alt="DVstreetline logo" class="h-10 w-10 rounded-full border border-gray-200 object-cover shadow-sm" />
+                <img src="{{ url_for('static', filename='img/logowithout.png') }}" alt="DVstreetline logo" class="h-11 w-11 rounded-full border border-white/20 bg-white/5 object-cover shadow-sm" />
                 <span class="font-heading text-xl font-semibold tracking-tight text-white">DVstreetline</span>
             </div>
             <button id="menu-toggle" class="lg:hidden rounded-full p-2 text-slate-100 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40" aria-label="Toggle navigation" aria-expanded="false">
@@ -51,6 +52,7 @@
                     <li><a href="{{ url_for('shop') }}" class="nav-pill">Shop</a></li>
                     <li><a href="{{ url_for('tutorials') }}" class="nav-pill">Tutorials</a></li>
                     <li><a href="{{ url_for('nft') }}" class="nav-pill">NFT</a></li>
+                    <li><a href="{{ url_for('about') }}" class="nav-pill">About</a></li>
                     <li><a href="{{ url_for('contact') }}" class="nav-pill">Contact</a></li>
                 </ul>
             </nav>
@@ -62,6 +64,7 @@
                     <li><a href="{{ url_for('shop') }}" class="block rounded-lg px-3 py-2 transition hover:bg-white/10">Shop</a></li>
                     <li><a href="{{ url_for('tutorials') }}" class="block rounded-lg px-3 py-2 transition hover:bg-white/10">Tutorials</a></li>
                     <li><a href="{{ url_for('nft') }}" class="block rounded-lg px-3 py-2 transition hover:bg-white/10">NFT</a></li>
+                    <li><a href="{{ url_for('about') }}" class="block rounded-lg px-3 py-2 transition hover:bg-white/10">About</a></li>
                     <li><a href="{{ url_for('contact') }}" class="block rounded-lg px-3 py-2 transition hover:bg-white/10">Contact</a></li>
                 </ul>
             </nav>
@@ -76,6 +79,7 @@
         <div class="mx-auto max-w-6xl px-6 text-sm text-slate-300">© 2025 DVstreetline. All rights reserved.</div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -114,6 +118,14 @@
             clearTimeout(glowTimeout);
             glowTimeout = setTimeout(() => cursorGlow.classList.remove('is-active'), 500);
         });
+
+        if (window.AOS) {
+            AOS.init({
+                duration: 1100,
+                easing: 'ease-out-cubic',
+                once: true,
+            });
+        }
     </script>
 </body>
 </html>

@@ -3,47 +3,123 @@
 {% block title %}DVstreetline — Built for sound and speed{% endblock %}
 
 {% block content %}
-<section class="relative mx-auto flex max-w-6xl flex-col gap-16 px-6 py-16 lg:flex-row lg:items-center">
-    <div class="vertical-marker">Liquid Ether</div>
-    <div class="flex-1 space-y-6">
-        <p class="tagline-pill">Music × Fashion × Culture</p>
-        <h1 class="heading-font text-4xl leading-tight sm:text-5xl lg:text-6xl headline-animate">
-            Built by creators → for culture.
-        </h1>
-        <p class="body-font max-w-2xl text-lg text-slate-200 subtle-fade">
-            DVstreetline is a luxury streetwear house born at the intersection of music, movement, and technology. We craft premium garments that move with sound and speed, designed for those who live after dark.
-        </p>
-        <div class="cta-group flex flex-wrap gap-4">
-            <a href="{{ url_for('shop') }}" class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-xl shadow-cyan-500/20 transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-300">Shop the drop</a>
-            <a href="{{ url_for('tutorials') }}" class="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:border-cyan-300 hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-300">View tutorials</a>
+<section class="hero-shell">
+    <div class="hero-grid">
+        <div class="hero-copy" data-aos="fade-right">
+            <p class="tagline-pill">MUSIC × FASHION × WEB3</p>
+            <h1 class="hero-heading">
+                Built for creators → coded for culture.
+            </h1>
+            <p class="hero-sub">Wear the hoodie. Own the NFT.</p>
+            <p class="hero-vision">Our Vision: DV Streetline transforms hoodies into hybrid digital assets — combining street style, music energy, and blockchain NFTs you own, trade, and unlock.</p>
+            <div class="cta-group">
+                <a href="{{ url_for('shop') }}" class="btn-primary">Shop the drop</a>
+                <a href="{{ url_for('tutorials') }}" class="btn-ghost">Watch how it works</a>
+            </div>
         </div>
-    </div>
-    <div class="flex-1">
-        <div class="hero-card">
-            <video autoplay muted loop playsinline class="h-full w-full object-cover rounded-3xl">
-                <source src="{{ url_for('static', filename='videos/drakegif.mov') }}" type="video/quicktime">
-                <!-- Fallback image if the video cannot be played -->
-                <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="DVstreetline hoodie mockup" class="h-full w-full object-cover" />
-            </video>
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
+            <div class="hero-orb orb-a"></div>
+            <div class="hero-orb orb-b"></div>
+            <div class="glass-visual">
+                <div class="floating-chip">Live motion feed</div>
+                <div class="gif-frame">
+                    <img src="{{ url_for('static', filename='img/drake.gif') }}" alt="Drake inspired motion loop" class="hero-gif" />
+                    <div class="gif-overlay"></div>
+                </div>
+                <div class="shape-accent">
+                    <img src="{{ url_for('static', filename='css/img/6.png') }}" alt="Gradient accent" />
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-
-<section class="mx-auto max-w-6xl px-6 pb-20">
-    <div class="grid gap-10 lg:grid-cols-2">
-        <div class="space-y-4">
-            <h2 class="heading-font text-2xl uppercase tracking-[0.12em] text-gray-200">Problem</h2>
-            <p class="body-font text-lg leading-relaxed text-gray-300">“In a world overflowing with noise — trends, influencers, fast fashion, and mass-produced ‘aesthetics’ — people have lost their sense of identity. Music used to be personal. Clothing used to mean something.</p>
-            <p class="body-font text-lg leading-relaxed text-gray-300">People no longer know what represents them.<br>Fashion feels disconnected from culture.<br>Music tastes don’t show up in what people wear.<br>Everything looks the same.<br>Identity feels confused, temporary, and disposable.</p>
-            <p class="body-font text-lg leading-relaxed text-gray-300">There is no brand that connects music lovers, car enthusiasts, and culture-driven individuals to clothing that reflects who they really are. There is no easy place to buy clothing that carries meaning, story, and belonging. People want clothes that feel like them — not like another trend.”</p>
+<section class="section-shell" id="how">
+    <div class="section-header" data-aos="fade-up">
+        <p class="tagline-pill">How it works</p>
+        <h2 class="section-title">Unlock digital rarity from every drop</h2>
+        <p class="section-text">Each hoodie carries a scannable code that mints a surprise NFT tier. Claim it, trade it, flex it.</p>
+    </div>
+    <div class="steps-grid">
+        <div class="step-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="step-icon">1</div>
+            <h3>Buy a DVstreetline hoodie</h3>
+            <p>Limited runs with embedded tech and premium fabric. Each piece is numbered.</p>
         </div>
-        <div class="space-y-4">
-            <h2 class="heading-font text-2xl uppercase tracking-[0.12em] text-gray-200">Our Solution</h2>
-            <p class="body-font text-lg leading-relaxed text-gray-300">“DvStreetline gives people their identity back. We merge music × fashion × technology × culture to create clothing that carries story, emotion, and belonging.</p>
-
-            <p class="body-font text-lg leading-relaxed text-gray-300">Through our website, QR scans, digital profiles, community rewards, and exclusive drops, we create an ecosystem where fashion is no longer just fabric — it’s meaning, culture, and connection. DvStreetline is not a brand you buy. It’s a brand you join.”</p>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon">2</div>
+            <h3>Scan the QR code</h3>
+            <p>Tap your tag or scan the code inside the hoodie to activate your claim.</p>
         </div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon">3</div>
+            <h3>Connect wallet</h3>
+            <p>Link your wallet securely to receive ownership on-chain and join the crew.</p>
+        </div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-icon">4</div>
+            <h3>Receive a random NFT</h3>
+            <p>Common, Rare, or Ultra Rare — each with perks, music stems, and unlockable drops.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-shell" id="hybrid">
+    <div class="two-col">
+        <div class="col-card" data-aos="fade-right">
+            <div class="floating-chip">Hybrid streetwear + web3</div>
+            <h2 class="section-title">Physical heat, digital twins</h2>
+            <p class="section-text">Every DVstreetline hoodie carries an NFT twin that evolves with your movement and music taste. Own the garment, own the data, own the flex.</p>
+            <div class="feature-list">
+                <span>Embedded NFC tags</span>
+                <span>Exclusive music drops</span>
+                <span>Community-only tutorials</span>
+                <span>Tradable NFT identity</span>
+            </div>
+        </div>
+        <div class="col-card image-card" data-aos="fade-left">
+            <div class="card-bg"></div>
+            <img src="{{ url_for('static', filename='css/img/3.png') }}" alt="Hoodie silhouette" class="accent-img" />
+            <div class="hover-chip">Hover to feel the glow</div>
+        </div>
+    </div>
+</section>
+
+<section class="section-shell" id="rarity">
+    <div class="section-header" data-aos="fade-up">
+        <p class="tagline-pill">Rarity system</p>
+        <h2 class="section-title">Your pull sets the tone</h2>
+    </div>
+    <div class="rarity-grid">
+        <div class="rarity-card" data-aos="zoom-in" data-aos-delay="0">
+            <p class="rarity-name">Common</p>
+            <p class="rarity-rate">70%</p>
+            <p class="rarity-desc">Starting around €2 — unlock starter stems and member entry.</p>
+        </div>
+        <div class="rarity-card" data-aos="zoom-in" data-aos-delay="120">
+            <p class="rarity-name">Rare</p>
+            <p class="rarity-rate">25%</p>
+            <p class="rarity-desc">Can be worth around €50 with special visuals and collab rewards.</p>
+        </div>
+        <div class="rarity-card" data-aos="zoom-in" data-aos-delay="240">
+            <p class="rarity-name">Ultra Rare</p>
+            <p class="rarity-rate">5%</p>
+            <p class="rarity-desc">Can be worth around €200 — unlock legendary drops and studio time.</p>
+        </div>
+    </div>
+</section>
+
+<section class="join-shell" id="cta">
+    <div class="join-card" data-aos="fade-up">
+        <div>
+            <p class="tagline-pill">Join the drop</p>
+            <h2 class="section-title">Get early access and unlock the first wave</h2>
+            <p class="section-text">Be first in line for the next hoodie + NFT pairing, plus private tutorial drops.</p>
+        </div>
+        <form class="join-form">
+            <input type="email" placeholder="Enter your email" required class="join-input" />
+            <button type="submit" class="btn-primary">Get early access</button>
+        </form>
     </div>
 </section>
 {% endblock %}

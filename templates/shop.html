@@ -3,11 +3,52 @@
 {% block title %}Shop - DVstreetline{% endblock %}
 
 {% block content %}
-<section class="mx-auto max-w-6xl px-6 py-16 space-y-6">
-    <p class="text-xs uppercase tracking-[0.3em] text-gray-500">Shop</p>
-    <div class="rounded-2xl border border-gray-200 bg-white/80 p-8 shadow-soft">
-        <h1 class="font-heading text-3xl font-semibold text-gray-900">Shop</h1>
-        <p class="mt-3 text-gray-600">Our latest products will appear here. Keep an eye out for monochrome releases that pair effortlessly with the DVstreetline aesthetic.</p>
+<section class="mx-auto max-w-6xl px-6 py-16 space-y-8">
+    <div class="flex flex-col gap-3" data-aos="fade-up">
+        <p class="tagline-pill">Shop</p>
+        <h1 class="heading-font text-4xl leading-tight sm:text-5xl">Monochrome drops, transparent odds</h1>
+        <p class="text-lg text-slate-300">Choose your fit, lock in the rarity odds, and mint the matching NFT instantly.</p>
+    </div>
+
+    <div class="overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur" data-aos="fade-up" data-aos-delay="100">
+        <table class="min-w-full divide-y divide-white/10 text-left">
+            <thead class="bg-white/5 text-sm uppercase tracking-[0.15em] text-slate-200">
+                <tr>
+                    <th class="px-4 py-3">Product Name</th>
+                    <th class="px-4 py-3">Hoodie Color</th>
+                    <th class="px-4 py-3">Size Range</th>
+                    <th class="px-4 py-3">Price</th>
+                    <th class="px-4 py-3">Included NFT Rarity Odds</th>
+                    <th class="px-4 py-3"></th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-white/5 text-slate-200">
+                <tr class="hover:bg-white/5 transition">
+                    <td class="px-4 py-4">DV Monolith Hoodie</td>
+                    <td class="px-4 py-4">Carbon Black</td>
+                    <td class="px-4 py-4">XS – XXL</td>
+                    <td class="px-4 py-4">€120</td>
+                    <td class="px-4 py-4">70% Common / 25% Rare / 5% Ultra Rare</td>
+                    <td class="px-4 py-4 text-right"><a href="#" class="btn-primary text-sm px-4 py-2">Buy now</a></td>
+                </tr>
+                <tr class="hover:bg-white/5 transition">
+                    <td class="px-4 py-4">DV Signal Hoodie</td>
+                    <td class="px-4 py-4">Storm Grey</td>
+                    <td class="px-4 py-4">S – XXL</td>
+                    <td class="px-4 py-4">€130</td>
+                    <td class="px-4 py-4">65% Common / 28% Rare / 7% Ultra Rare</td>
+                    <td class="px-4 py-4 text-right"><a href="#" class="btn-primary text-sm px-4 py-2">Buy now</a></td>
+                </tr>
+                <tr class="hover:bg-white/5 transition">
+                    <td class="px-4 py-4">DV Lumen Hoodie</td>
+                    <td class="px-4 py-4">Iridescent Slate</td>
+                    <td class="px-4 py-4">M – XXL</td>
+                    <td class="px-4 py-4">€150</td>
+                    <td class="px-4 py-4">60% Common / 30% Rare / 10% Ultra Rare</td>
+                    <td class="px-4 py-4 text-right"><a href="#" class="btn-primary text-sm px-4 py-2">Buy now</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 {% endblock %}
